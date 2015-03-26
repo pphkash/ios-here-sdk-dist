@@ -226,7 +226,7 @@ Required signatures and the PPHTransactionManager
 Some transactions require a signature.  This may happen for several reasons.  The transaction amount might be over a certain limit, or the card swiper / chip & pin reader hardware may require it based on a variety of reasons.   The PPHTransactionManager can inform you if a signature is required for the payment that is being processed. 
 When the processPayment method's completion handler is called you can check the isSignatureRequiredToFinalize member of the PPHTransactionResponse object that is provided to the completion handler. 
 
-
+<!--- Removing Location/Checkin References
 Location Management
 ===================
 
@@ -255,6 +255,7 @@ completes (error handling in the below example is omitted for readability).
 
         }];
 ```
+--->	
 
 <!---
 PayPal Access
@@ -326,7 +327,7 @@ should find it automatically. But again, the return URL in PayPal Access is hard
 configure that once. One instance of the sample server can serve all your developers in theory, so it's easiest to
 run it on some shared or external resource.
 -->
-
+<!--- Removing Location/Checkin References
 Opening Consumer Tabs
 =====================
 To checkin consumers to merchants, use the checkin.js script in the scripts directory. For example:
@@ -339,3 +340,4 @@ node checkin.js -m selleraccount@paypal.com -c buyeraccount@paypal.com -i tombra
 
 Use -i to add an image for the buyer - this only needs to be done once. Sometimes it takes a few runs to get through,
 and images tend to be very finicky in staging.
+--->
